@@ -3,9 +3,9 @@
 
 require "test_helper"
 
-class TestPersonLegalEntity < Minitest::Test
+class TestLegalEntity < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::PersonLegalEntity::VERSION
+    refute_nil ::LegalEntity::VERSION
   end
 
   def test_it_does_something_useful

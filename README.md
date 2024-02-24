@@ -1,1 +1,1 @@
-# PersonLegalEntity
+# LegalEntity

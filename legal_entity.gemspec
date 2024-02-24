@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
-require_relative "lib/person_legal_entity/version"
+require_relative "lib/legal_entity/version"
 
 Gem::Specification.new do |spec|
-  spec.name    = "person_legal_entity"
-  spec.version = PersonLegalEntity::VERSION
+  spec.name    = "legal_entity"
+  spec.version = LegalEntity::VERSION
   spec.authors = ["Yaw Boakye"]
   spec.email   = ["wheresyaw@gmail.com"]
 
   spec.required_ruby_version = ">= 2.7.0"
 
-  spec.summary     = %(`person_legal_entity` represents, in your system, the legally recognized human being.)
+  spec.summary     = %(`legal_entity` represents, in your system, the legally recognized human being.)
   spec.description = spec.summary
-  spec.homepage    = %(https://github.com/yawboakye/person_legal_entity)
+  spec.homepage    = %(https://github.com/yawboakye/legal_entity)
   spec.license     = "MIT"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
@@ -29,6 +29,8 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = %w[lib]
 
+  spec.add_runtime_dependency     "sorbet-runtime",   "~> 0.5"
+
   spec.add_development_dependency "minitest",         "~> 5.16"
   spec.add_development_dependency "rake",             "~> 13.0"
   spec.add_development_dependency "rubocop",          "~> 1.21"
@@ -36,7 +38,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-rake",     "~> 0.6"
   spec.add_development_dependency "rubocop-sorbet",   "~> 0.7"
   spec.add_development_dependency "sorbet",           "~> 0.5"
-  spec.add_development_dependency "tapioca",          "~> 0.12"
-  spec.add_runtime_dependency     "sorbet-runtime",   "~> 0.5"
   spec.add_development_dependency "spoom",            "~> 1.2"
+  spec.add_development_dependency "tapioca",          "~> 0.12"
+
+  spec.add_dependency "activerecord",                 "~> 7.0"
 end
