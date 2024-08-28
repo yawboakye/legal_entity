@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.7.0"
 
-  spec.summary     = %(`legal_entity` represents, in your system, the legally recognized human being.)
+  spec.summary     = %(`legal_entity` represents, in your system, the legally recognized entity, according to some jurisdiction.)
   spec.description = spec.summary
   spec.homepage    = %(https://github.com/yawboakye/legal_entity)
   spec.license     = "MIT"
